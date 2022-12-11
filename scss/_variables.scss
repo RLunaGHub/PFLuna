@@ -1,7 +1,7 @@
-
 $primary-color: #ebcdb4;
 $secondary-color: #c76666;
 $third-color: #dfd3ca;
+
 
 body {
   background-color: $primary-color;
@@ -12,10 +12,10 @@ body {
 }
 .caja {
   background-color: $secondary-color;
-  }
-  .caja-nav{
-    background-color: $secondary-color;
-  }
+}
+.caja-nav {
+  background-color: $secondary-color;
+}
 .historia {
   background-color: $third-color;
 }

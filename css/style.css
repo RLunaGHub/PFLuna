@@ -6,6 +6,7 @@
 }
 
 /*Transición Background*/
+/*Condicional para que se vea en mov y hover para desk clase 14-9*/
 .detail {
   position: relative;
   bottom: 0;
@@ -82,6 +83,36 @@ body {
 }
 .caja-nav ul li a:hover {
   color: rgb(240, 224, 224);
+}
+
+.boton-fb {
+  width: 50px;
+  text-align: center;
+  color: rgb(17, 16, 16);
+  border-radius: 15px;
+  border: 1px solid black;
+  background-color: #3b5998;
+  color: #ffffff;
+}
+
+.boton-tw {
+  width: 50px;
+  text-align: center;
+  color: rgb(17, 16, 16);
+  border-radius: 15px;
+  border: 1px solid black;
+  background-color: #ffffff;
+  color: #1da1f2;
+}
+
+.boton-insta {
+  width: 50px;
+  text-align: center;
+  color: rgb(17, 16, 16);
+  border-radius: 15px;
+  border: 1px solid black;
+  background-color: rgb(236, 187, 187);
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
