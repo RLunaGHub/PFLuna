@@ -2,7 +2,6 @@ $primary-color: #ebcdb4;
 $secondary-color: #c76666;
 $third-color: #dfd3ca;
 
-
 body {
   background-color: $primary-color;
   padding-top: 60px;
@@ -18,4 +17,21 @@ body {
 }
 .historia {
   background-color: $third-color;
+}
+
+.botonb {
+  width: 100px;
+  text-align: center;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+.boton-enviar {
+  @extend .botonb;
+  background-color: green;
+}
+
+.boton-resetear {
+  @extend .botonb;
+  background-color: red;
 }
