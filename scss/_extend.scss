@@ -1,0 +1,17 @@
+.botonb {
+  width: 100px;
+  text-align: center;
+  border-radius: 15px;
+  border: 1px solid black;
+  text-decoration:solid;
+}
+
+.boton-enviar {
+  @extend .botonb;
+  background-color: rgb(137, 240, 137);
+}
+
+.boton-resetear {
+  @extend .botonb;
+  background-color: rgb(250, 44, 44);
+}

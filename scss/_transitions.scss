@@ -1,5 +1,5 @@
 /*Transición Background*/
-/*Condicional para que se vea en mov y hover para desk clase 14-9*/
+
 .detail {
   position: relative;
   bottom: 0;
@@ -30,11 +30,12 @@
   }
 }
 
+/*Transición título desde la derecha*/
 h1 {
   animation: from-right 6s ease;
 }
 
-/*Transición título desde la derecha*/
+
 @keyframes from-right {
   0% {
     opacity: 0;
