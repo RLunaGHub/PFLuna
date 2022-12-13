@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-/*Transición Background*/
+/*Transición Background desk - fijo mobile*/
 .detail {
   position: relative;
   bottom: 0;
@@ -32,7 +32,7 @@
     opacity: 1;
   }
 }
-/*Transición título desde la derecha*/
+/*Translate título desde la derecha*/
 h1 {
   animation: from-right 6s ease;
 }

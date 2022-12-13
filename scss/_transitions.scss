@@ -1,4 +1,4 @@
-/*Transición Background*/
+/*Transición Background desk - fijo mobile*/
 
 .detail {
   position: relative;
@@ -30,11 +30,10 @@
   }
 }
 
-/*Transición título desde la derecha*/
+/*Translate título desde la derecha*/
 h1 {
   animation: from-right 6s ease;
 }
-
 
 @keyframes from-right {
   0% {
