@@ -50,9 +50,9 @@ h1 {
 /*Botones nuevos*/
 /*Prueba boton nuevo*/
 .custom-btn {
-  width: 100px;
+  width: 130px;
   height: 40px;
-  color: rgb(26, 24, 24);
+  color: rgb(34, 32, 32);
   border-radius: 5px;
   padding: 10px 25px;
   font-family: "Lato", sans-serif;
@@ -67,74 +67,87 @@ h1 {
 }
 
 .btn-nuevo {
-  position: relative;
-  right: 20px;
-  bottom: 20px;
-  border: none;
-  box-shadow: none;
-  width: 130px;
-  height: 40px;
+  background: #ebcdb4;
   line-height: 42px;
-  -webkit-perspective: 230px;
-  perspective: 230px;
+  padding: 0;
+  border: none;
 }
 
 .btn-nuevo span {
-  background: #ebcdb4;
+  position: relative;
   display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-nuevo:before,
+.btn-nuevo:after {
   position: absolute;
-  width: 130px;
-  height: 40px;
-  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  margin: 0;
-  text-align: center;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: rgb(251, 75, 2);
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9), -4px -4px 5px 0px rgba(255, 255, 255, 0.9), 7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
 }
 
-.btn-nuevo span:nth-child(1) {
-  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.6), -4px -4px 5px 0px rgba(255, 255, 255, 0.6), 7px 7px 20px 0px rgba(0, 0, 0, 0.1333333333), 4px 4px 5px 0px rgba(0, 0, 0, 0.0666666667);
-  -webkit-transform: rotateX(90deg);
-  -moz-transform: rotateX(90deg);
-  transform: rotateX(90deg);
-  -webkit-transform-origin: 50% 50% -20px;
-  -moz-transform-origin: 50% 50% -20px;
-  transform-origin: 50% 50% -20px;
+.btn-nuevo:before {
+  height: 0%;
+  width: 2px;
 }
 
-.btn-nuevo span:nth-child(2) {
-  -webkit-transform: rotateX(0deg);
-  -moz-transform: rotateX(0deg);
-  transform: rotateX(0deg);
-  -webkit-transform-origin: 50% 50% -20px;
-  -moz-transform-origin: 50% 50% -20px;
-  transform-origin: 50% 50% -20px;
-}
-
-.btn-nuevo:hover span:nth-child(1) {
-  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
-  -webkit-transform: rotateX(0deg);
-  -moz-transform: rotateX(0deg);
-  transform: rotateX(0deg);
-}
-
-.btn-nuevo:hover span:nth-child(2) {
-  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
-  color: transparent;
-  -webkit-transform: rotateX(-90deg);
-  -moz-transform: rotateX(-90deg);
-  transform: rotateX(-90deg);
+.btn-nuevo:after {
+  width: 0%;
+  height: 2px;
 }
 
 @media only screen and (max-width: 768px) {
-  .boton-nuevo span {
-    opacity: 0;
+  .btn-nuevo:hover {
+    display: none;
   }
 }
+.btn-nuevo:hover {
+  color: rgb(17, 17, 17);
+  background: transparent;
+}
+
+.btn-nuevo:hover:before {
+  height: 100%;
+}
+
+.btn-nuevo:hover:after {
+  width: 100%;
+}
+
+.btn-nuevo span:before,
+.btn-nuevo span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: rgb(251, 75, 2);
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9), -4px -4px 5px 0px rgba(255, 255, 255, 0.9), 7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-nuevo span:before {
+  width: 2px;
+  height: 0%;
+}
+
+.btn-nuevo span:after {
+  height: 2px;
+  width: 0%;
+}
+
+.btn-nuevo span:hover:before {
+  height: 100%;
+}
+
+.btn-nuevo span:hover:after {
+  width: 100%;
+}
+
 body {
   background-color: #ebcdb4;
   padding-top: 60px;
