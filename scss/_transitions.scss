@@ -79,6 +79,7 @@ h1 {
   -webkit-perspective: 230px;
   perspective: 230px;
 }
+
 .btn-nuevo span {
   background: #ebcdb4;
   display: block;
@@ -136,3 +137,8 @@ h1 {
   transform: rotateX(-90deg);
 }
 
+@media only screen and (max-width: 768px) {
+  .boton-nuevo span {
+    opacity: 0;
+  }
+}

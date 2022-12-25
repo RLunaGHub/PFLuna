@@ -130,6 +130,11 @@ h1 {
   transform: rotateX(-90deg);
 }
 
+@media only screen and (max-width: 768px) {
+  .boton-nuevo span {
+    opacity: 0;
+  }
+}
 body {
   background-color: #ebcdb4;
   padding-top: 60px;
