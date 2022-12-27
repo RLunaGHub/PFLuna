@@ -138,6 +138,7 @@ h1 {
 body {
   background-color: #ebcdb4;
   padding-top: 60px;
+  min-height: 100%;
 }
 
 .copy {
@@ -146,6 +147,13 @@ body {
 
 .caja {
   background-color: #c76666;
+}
+
+.caja-2 {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 
 .caja-nav {
@@ -175,6 +183,10 @@ body {
 }
 .caja-nav ul li a:hover {
   color: rgb(240, 224, 224);
+}
+
+.caja-f {
+  margin-top: auto;
 }
 
 /*Mixin botones redes footer*/

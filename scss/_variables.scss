@@ -5,20 +5,25 @@ $third-color: #dfd3ca;
 body {
   background-color: $primary-color;
   padding-top: 60px;
+  min-height: 100%;
 }
 .copy {
   background-color: $primary-color;
 }
 .caja {
   background-color: $secondary-color;
-}
+}  
+.caja-2{
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  }
+
 .caja-nav {
   background-color: $secondary-color;
 }
 .historia {
   background-color: $third-color;
+  
 }
-
-
-
-
