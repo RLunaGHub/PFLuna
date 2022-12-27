@@ -12,22 +12,22 @@ body {
 }
 .caja {
   background-color: $secondary-color;
-}  
-.caja-2{
+
+}
+.caja-2 {
   position: absolute;
   right: 0;
   left: 0;
   bottom: 0;
-  }
+}
 
 .caja-nav {
   background-color: $secondary-color;
 }
 .historia {
   background-color: $third-color;
-  
 }
 
 .gradient {
-  background: linear-gradient(#dfcfc2, #e9ad7c)
+  background: linear-gradient(#dfcfc2, #e9ad7c);
 }
