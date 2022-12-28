@@ -12,5 +12,8 @@
   },
   "author": "",
   "license": "ISC",
-  "keywords": []
+  "keywords": [],
+  "dependencies": {
+    "bootstrap-icons": "^1.10.3"
+  }
 }
