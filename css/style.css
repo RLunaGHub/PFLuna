@@ -5,10 +5,6 @@
   box-sizing: border-box;
 }
 
-.caja-f {
-  margin-top: auto;
-}
-
 /*Transición Background desk - fijo mobile*/
 .detail {
   position: relative;
@@ -16,7 +12,10 @@
   left: 0;
   width: 100%;
   height: 20%;
-  background: linear-gradient(rgba(80, 72, 72, 0.685), rgba(207, 201, 201, 0.226));
+  background: linear-gradient(
+    rgba(80, 72, 72, 0.685),
+    rgba(207, 201, 201, 0.226)
+  );
   color: white;
   display: flex;
   flex-direction: column;
@@ -26,6 +25,7 @@
   opacity: 0;
   transition: opacity 1s;
 }
+
 .detail:hover {
   opacity: 1;
 }
@@ -65,7 +65,8 @@ h1 {
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
-  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
 }
 
@@ -81,13 +82,15 @@ h1 {
   -webkit-perspective: 230px;
   perspective: 230px;
 }
+
 .btn-nuevo span {
   background: linear-gradient(#dfcfc2, #e9ad7c);
   display: block;
   position: absolute;
   width: 130px;
   height: 40px;
-  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   margin: 0;
   text-align: center;
@@ -97,8 +100,12 @@ h1 {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.btn-nuevo span span:nth-child(1) {
-  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.6), -4px -4px 5px 0px rgba(255, 255, 255, 0.6), 7px 7px 20px 0px rgba(0, 0, 0, 0.1333333333), 4px 4px 5px 0px rgba(0, 0, 0, 0.0666666667);
+
+.btn-nuevo span:nth-child(1) {
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.6),
+    -4px -4px 5px 0px rgba(255, 255, 255, 0.6),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1333333333),
+    4px 4px 5px 0px rgba(0, 0, 0, 0.0666666667);
   -webkit-transform: rotateX(90deg);
   -moz-transform: rotateX(90deg);
   transform: rotateX(90deg);
@@ -106,7 +113,8 @@ h1 {
   -moz-transform-origin: 50% 50% -20px;
   transform-origin: 50% 50% -20px;
 }
-.btn-nuevo span span:nth-child(1) span:nth-child(2) {
+
+.btn-nuevo span:nth-child(2) {
   -webkit-transform: rotateX(0deg);
   -moz-transform: rotateX(0deg);
   transform: rotateX(0deg);
@@ -114,25 +122,29 @@ h1 {
   -moz-transform-origin: 50% 50% -20px;
   transform-origin: 50% 50% -20px;
 }
-.btn-nuevo span span:nth-child(1) span:nth-child(2):hover span:nth-child(1) {
-  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
-  -webkit-transform: rotateX(0deg);
-  -moz-transform: rotateX(0deg);
-  transform: rotateX(0deg);
-}
-.btn-nuevo span span:nth-child(1) span:nth-child(2):hover span:nth-child(1):hover span:nth-child(2) {
-  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
-  color: transparent;
-  -webkit-transform: rotateX(-90deg);
-  -moz-transform: rotateX(-90deg);
-  transform: rotateX(-90deg);
-}
 
 @media only screen and (max-width: 768px) {
   .btn-nuevo:hover {
     display: none;
   }
 }
+.btn-nuevo:hover span:nth-child(1) {
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+
+.btn-nuevo:hover span:nth-child(2) {
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  color: transparent;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
+
 body {
   background-color: #ebcdb4;
   padding-top: 60px;
@@ -187,6 +199,10 @@ body {
   color: rgb(240, 224, 224);
 }
 
+.caja-f {
+  margin-top: auto;
+}
+
 /*Mixin botones redes footer*/
 .boton-fb {
   width: 50px;
@@ -218,7 +234,9 @@ body {
   color: black;
 }
 
-.botonb, .boton-resetear, .boton-enviar {
+.botonb,
+.boton-resetear,
+.boton-enviar {
   width: 100px;
   text-align: center;
   border-radius: 10px;
